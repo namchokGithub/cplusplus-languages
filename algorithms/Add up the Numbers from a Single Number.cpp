@@ -10,11 +10,12 @@
 using namespace std;
 
 int addUp(int num) {
-    if(num > 0 ){
-        return num + addUp(num-1);
-    }else{
-        return 0;
-    }
+    // if(num > 0 ){
+    //     return num + addUp(num-1);
+    // }else{
+    //     return 0;
+    // }
+    return (num*(num+1))/2;
 }
 
 int main(int argc, char const *argv[])
