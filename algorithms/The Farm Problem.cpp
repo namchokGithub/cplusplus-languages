@@ -9,7 +9,8 @@
 using namespace std;
 
 int animals(int chickens, int cows, int pigs) {
-    return (chickens*2) + (chickens*4) + (chickens*4);
+    // return (chickens*2) + (cows*4) + (pigs*4);
+    return (chickens*2) + ((cows+pigs)*4);
 }
 
 int main(int argc, char const *argv[])
