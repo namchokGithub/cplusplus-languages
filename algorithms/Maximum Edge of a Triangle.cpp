@@ -12,8 +12,8 @@ int nextEdge(int side1, int side2);
 
 int main(int argc, char const *argv[])
 {
-    cout << setfill('x') << setw(20) << "Maximum range of third edge." << endl;
-    cout << setfill(' ') << setw(20) << nextEdge(10, 2) << endl;
+    cout << "\tMaximum range of third edge." << endl;
+    cout << "\tSide 1: 10, Side 2: 2 = " << nextEdge(10, 2) << endl;
     return 0;
 }
 
