@@ -13,13 +13,25 @@ using namespace std;
 
 vector<int> multiplyByLength(vector<int> arr) {
     // ------------------------------------------------------ //
-    vector<int> temp;
-    for(int i=0;i<arr.size();i++){
-        int num = arr.at(i) * arr.size();
-        temp.push_back(num);
-    }
+    // vector<int> temp;
+    // for(int i=0;i<arr.size();i++){
+    //     int num = arr.at(i) * arr.size();
+    //     temp.push_back(num);
+    // }
 
-	return temp;
+	// return temp;
+    // ------------------------------------------------------ //
+    // for(int i=0;i<arr.size();i++){
+	// 	arr[i] *= arr.size();
+	// }
+	// return arr;
+    // ------------------------------------------------------ //
+    int n = arr.size();
+	for(auto &i : arr)
+	{
+		i *= n;
+	}
+	return arr;
     // ------------------------------------------------------ //
 }
 
