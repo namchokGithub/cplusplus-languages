@@ -3,6 +3,8 @@
         "*.php": "php",
         "iostream": "cpp",
         "iomanip": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "string_view": "cpp",
+        "regex": "cpp"
     }
 }
