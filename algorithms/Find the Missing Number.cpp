@@ -11,23 +11,35 @@
 using namespace std;
 
 int missingNum(std::vector<int> arr) {
-    bool found=true;
+    // bool found=true;
 
-    for(int i=1;i<11;i++) {
-        for(auto number : arr) {
-            if(number==i) {
-                found=true;
-                break;
-            }else{
-                found=false;
-            }
-        }
-        if(!found){
-            return i;
-        }
+    // for(int i=1;i<11;i++) {
+    //     for(auto number : arr) {
+    //         if(number==i) {
+    //             found=true;
+    //             break;
+    //         }else{
+    //             found=false;
+    //         }
+    //     }
+    //     if(!found){
+    //         return i;
+    //     }
             
-    }
-    return 0;
+    // }
+    // return 0;
+    // --------------------------------------------------------- //
+    // int missing (1 + 2 + 3 + 4+ 5+ 6+7+8+9+10);
+    // for (int y:arr){
+    //     missing -= y;
+    // }
+    // return missing;
+    // --------------------------------------------------------- //
+    int sum = 0;
+    for (int i : arr)
+        sum += i;
+    return 55 - sum;
+    
 }
 
 int main(int argc, char const *argv[])
