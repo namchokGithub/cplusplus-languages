@@ -12,17 +12,20 @@
 using namespace std;
 
 bool isCircleCollision(std::vector<int> c1,std::vector<int> c2) {
-	// Step 1: Get the coordinates of the two centre points.
-    // Step 2: Calculate the radii of both circles as well as the sum of the radii.
-    int sumRadii = c1.at(0) + c2.at(0);
+	// // Step 1: Get the coordinates of the two centre points.
+    // // Step 2: Calculate the radii of both circles as well as the sum of the radii.
+    // int sumRadii = c1.at(0) + c2.at(0);
 
-    // Step 3: Calculate the distance between the two centre point using the standard distance formula.
-    float distance = sqrt(pow((c1.at(1)-c2.at(1)),2) + pow((c1.at(2)-c2.at(2)),2));
+    // // Step 3: Calculate the distance between the two centre point using the standard distance formula.
+    // float a = pow((c1.at(1)-c2.at(1)),2);
+    // float b = pow((c1.at(2)-c2.at(2)),2);
+    // float distance = sqrt(a + b);
 
-    // Step 4: Compare distance between centre A and B with Sum of Radii
-    return (distance < sumRadii) ? true : false;
+    // // Step 4: Compare distance between centre A and B with Sum of Radii
+    // return (distance < sumRadii) ? true : false;
 
-    // return ((sqrt(pow((c1.at(1)-c2.at(1)),2) + pow((c1.at(2)-c2.at(2)),2))) < (c1.at(0) + c2.at(0))) ? true : false;
+    return ((sqrt(pow((c1.at(1)-c2.at(1)),2) + pow((c1.at(2)-c2.at(2)),2))) < (c1.at(0) + c2.at(0))) ? true : false;
+    // return ((abs(c1[1] - c2[1]) + abs(c1[2] - c2[2])) <= c1[0]+c2[0]);
 }
 
 int main(int argc, char const *argv[])
