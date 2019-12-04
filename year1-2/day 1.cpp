@@ -48,6 +48,23 @@ int main(){
 //	cout << endl << "====== Result ======" << endl << endl;
 //	reverse(number);
 
+//  calculate time
+	int hour, minute;
+	int new_house, new_minute;
+	
+	cout << "Enter Hours and Minutes: ";
+	cin >> hour >> minute;
+	
+	int time_pass;
+	cout << "Enter time passed (in minutes): ";
+	cin >>  time_pass;
+	
+	new_minute = minute + time_pass;
+	new_house = hour + (new_minute/60);
+	new_minute = new_minute % 60;
+	
+	
+	cout << "Time: " << new_house << " : " << new_minute << endl;
 
 	
 	return 0;
